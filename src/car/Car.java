@@ -14,7 +14,40 @@ public class Car {
         speed = 0;
         engine.setSpeed(speed);
         System.out.println("Car started at speed : " + speed);
+    }
 
+    public void stop() {
+        speed = 0;
+        engine.setSpeed(speed);
+        System.out.println("Car stopped.");
+    }
+
+    public void accelerate() {
+        if (speed < 200) {
+            speed += 20;
+            engine.setSpeed(speed);
+            engine.increase();
+            System.out.println("Car accelerated to: " + speed);
+        }
+    }
+
+    public void brake() {
+        if (speed > 0) {
+            speed -= 20;
+            if (speed < 0)
+                speed = 0;
+
+            engine.setSpeed(speed);
+            engine.decrease();
+
+            System.out.println("Car slowed to: " + speed);
+        }
+    }
+
+    public void changeEngine(Engine newEngine) {
+        this.engine = newEngine;
+        this.engine.setSpeed(speed);
+        System.out.println("Engine replaced!");
     }
 
 }
