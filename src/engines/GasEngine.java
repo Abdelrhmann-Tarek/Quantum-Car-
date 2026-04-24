@@ -6,14 +6,14 @@ public class GasEngine implements Engine {
     @Override
     public void increase() {
         speed += 1;
-        System.out.println("Gasoline engine speed increased to " + speed);
+        // System.out.println("Gasoline engine speed increased to " + speed);
     }
 
     @Override
     public void decrease() {
         if (speed > 0) {
             speed -= 1;
-            System.out.println("Gasoline engine speed decreased to " + speed);
+            // System.out.println("Gasoline engine speed decreased to " + speed);
         } else {
             System.out.println("Gasoline engine is already at minimum speed.");
 
