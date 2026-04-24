@@ -1,6 +1,6 @@
 package engines;
 
-public class GasolineEngine implements Engine {
+public class GasEngine implements Engine {
     private int speed = 0;
 
     @Override
