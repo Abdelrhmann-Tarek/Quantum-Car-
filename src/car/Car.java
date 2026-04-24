@@ -24,10 +24,10 @@ public class Car {
 
     public void accelerate() {
         if (speed < 200) {
+            speed += 20;
             engine.setSpeed(speed);
-            for (int i = 0; i < 20; i++) {
-                engine.increase();
-            }
+            engine.increase();
+
             System.out.println("Car accelerated to: " + speed);
         }
     }
