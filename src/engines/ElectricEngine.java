@@ -5,15 +5,15 @@ public class ElectricEngine implements Engine {
 
     @Override
     public void increase() {
-        speed += 1;
-        System.out.println("Electric Engine speed increased to: " + speed);
+        speed++;
+        // System.out.println("Electric Engine speed increased to: " + speed);
     }
 
     @Override
     public void decrease() {
         if (speed > 0) {
             speed -= 1;
-            System.out.println("Electric Engine speed decreased to: " + speed);
+            // System.out.println("Electric Engine speed decreased to: " + speed);
         } else {
             System.out.println("Electric Engine is already at minimum speed.");
         }

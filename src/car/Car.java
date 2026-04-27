@@ -23,13 +23,15 @@ public class Car {
     }
 
     public void accelerate() {
-        if (speed < 200) {
-            speed += 20;
-            engine.setSpeed(speed);
-            engine.increase();
+        int acc = 20;
 
-            System.out.println("Car accelerated to: " + speed);
+        for (int i = 0; i < acc; i++) {
+            engine.increase();
         }
+
+        engine.setSpeed(speed);
+        System.out.println("Car accelerated to: " + speed);
+
     }
 
     public void brake() {
