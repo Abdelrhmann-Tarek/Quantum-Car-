@@ -31,6 +31,7 @@ public class App {
         hybridCar.accelerate();
         hybridCar.brake();
         hybridCar.stop();
+        // the acc error happen here
 
         System.out.println("\n--- ENGINE REPLACEMENT TEST ---");
         Car car = CarFactory.createCar("gas");

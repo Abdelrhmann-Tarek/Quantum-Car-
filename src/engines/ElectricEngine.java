@@ -7,6 +7,7 @@ public class ElectricEngine implements Engine {
     public void increase() {
         speed++;
         // System.out.println("Electric Engine speed increased to: " + speed);
+        // m
     }
 
     @Override
