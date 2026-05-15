@@ -25,6 +25,6 @@ public class ElectricEngine implements Engine {
         this.speed = speed;
         System.out.println("Electric Engine speed set to: " + this.speed);
     }
-    // @Override
+  
     // public int getSpeed() {
 }
